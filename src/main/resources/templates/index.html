@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Registration Service</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"/>
+
+    <link rel="stylesheet" href="../css/skeleton.css" th:href="@{/css/skeleton.css}"/>
+    <link rel="stylesheet" href="../css/normalize.css" th:href="@{/css/normalize.css}"/>
+    <link rel="stylesheet" href="../css/style.css" th:href="@{/css/style.css}"/>
+
+    <link rel="icon" type="image/png" href="images/favicon.png"/>
+
+    <script src="../js/jquery-2.2.4.min.js" th:src="@{/js/jquery-2.2.4.min.js}"></script>
+    <script src="../js/script.js" th:src="@{/js/script.js}"></script>
+</head>
+
+<body>
+        <!--@thymesVar id="firstBlockDisplay" type=""-->
+        <!--@thymesVar id="button" type=""-->
+        <div id = "button" class = "row" th:classappend="${button} ? display : nodisplay">
+            <p></p>
+            <div id="first" class = "u-pull-right">
+                      <button class="button-primary">Button element</button>
+            </div>
+        </div>
+    <div class = "container">
+        <div class = "row">
+            <div id="registration" class="nodisplay">
+                <h1 class = "five">Registration</h1>
+                <form>
+                    <div class="row">
+                        <div class="five columns">
+                            <label for="email">Your email
+                            <input class="u-pull-right" type="email" placeholder="test@mailbox.com" id="email"/>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="five columns">
+                            <label for="password">Your password
+                                <input class="u-pull-right" type="password"  id="password"/>
+                            </label>
+                        </div>
+                    </div>
+
+                    <input class="button-primary five" type="submit" value="Create my account"/>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

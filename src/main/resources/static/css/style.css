@@ -1,0 +1,11 @@
+.display{
+    display: block;
+}
+
+.nodisplay{
+    display: none;
+}
+
+.buttonSignUp{
+    float: right;
+}
